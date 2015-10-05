@@ -1,10 +1,10 @@
 module.exports = function(hostname) {
     // Settings for geojson.io
     L.mapbox.accessToken = 'pk.eyJ1IjoibGF1cmVuYW5jb25hIiwiYSI6ImNpZmFyZWUzcTJoNHJzeG03aTdzdHlvb3IifQ.Sns5051MHp9lnL-zzmju6g';
-    if (hostname === 'geojson.io') {
+    if (hostname === 'laurenancona.github.io') {
         return {
-            client_id: '62c753fd0faf18392d85',
-            gatekeeper_url: 'https://geojsonioauth.herokuapp.com',
+            client_id: '3d537c388917d3179438',
+            gatekeeper_url: 'https://geojsonio-gatekeeper.herokuapp.com',
         };
     // Customize these settings for your own development/deployment
     // version of geojson.io.
@@ -15,8 +15,8 @@ module.exports = function(hostname) {
         L.mapbox.config.REQUIRE_ACCESS_TOKEN = true;
         return {
             GithubAPI: null,
-            client_id: '3d537c388917d3179438',
-            gatekeeper_url: 'https://geojsonio-gatekeeper.herokuapp.com'
+            client_id: 'bb7bbe70bd1f707125bc',
+            gatekeeper_url: 'https://localhostauth.herokuapp.com'
         };
     }
 };
